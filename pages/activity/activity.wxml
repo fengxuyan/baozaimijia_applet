@@ -1,0 +1,36 @@
+<view class="main">
+   <view class='main-top clearfloat'>
+    <view class="title">
+      <view class="t1">宝在米家</view>
+      <view class="t2">门店推广，营销活动</view>
+    </view>
+  </view>
+  <view class='activity'>
+   <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+    <block wx:for="{{imgUrls}}" wx:key="">
+      <swiper-item>
+        <image src="{{item.src}}" class="slide-image" />
+        <view class="activity-info">
+          <view class="name">
+          {{item.name}}
+          </view>
+          <view class="sales">
+            <view class="sell">
+              <span class="spp-1">已售</span>
+              <span class="spp-2"> 1000</span>
+              <view class="type">助力</view>
+            </view>
+            <view class="price">
+                <span class="price-1">¥</span>
+                <span class="price-2">999</span>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+    <!-- <view class='list'>
+    1
+    </view> -->
+  </view>
+</view>

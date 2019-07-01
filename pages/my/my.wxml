@@ -1,0 +1,40 @@
+<!--index.wxml-->
+
+<view class="userinfo">
+
+  <block>
+    <image class="userinfo-avatar" src="../../image/eval_head.png" background-size="cover"></image>
+    <text class="userinfo-nickname">张哲</text>
+  </block>
+  <image  src="../../image/my-bg.png" background-size="cover" class='earth'></image>
+</view>
+
+<view class="userinfo-list">
+  <view class="input-row clearfloat" bindtap='showToast'>
+    <span class="txt">我报名的课程</span>
+    <view class="tags">
+      <text class="fa fa-angle-right"></text>
+    </view>
+  </view>
+   <view class="input-row clearfloat" bindtap='showToast'>
+    <span class="txt">我参与的活动</span>
+    <view class="tags">
+      <text class="fa fa-angle-right"></text>
+    </view>
+  </view>
+</view>
+
+<view class="userinfo-list">
+  <view class="input-row clearfloat" bindtap='showToast'>
+    <span class="txt">联系客服</span>
+    <view class="tags">
+      <text class="fa fa-angle-right"></text>
+    </view>
+  </view>
+   <view class="input-row clearfloat" bindtap='showToast'>
+    <span class="txt">关于我们</span>
+    <view class="tags">
+      <text class="fa fa-angle-right"></text>
+    </view>
+  </view>
+</view>

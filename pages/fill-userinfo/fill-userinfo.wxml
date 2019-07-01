@@ -1,0 +1,23 @@
+<view class="apply-for-area">
+  <view class="apply-for-area-title">基本信息</view>
+  <view class="apply-for-area-info">请您认真完善基本信息</view>
+  <view class='inp'>
+    <text class='fa fa-child fa-icon'></text>
+    <input type="text" placeholder="姓名" class="apply-inp" bindinput='listenChildName'/>
+     <text class='fa fa-asterisk fa-icon-1'></text>
+  </view>
+
+  <view class='inp'>
+    <text class='fa fa-user fa-icon'></text>
+    <input type="text" placeholder="联系方式" class="apply-inp" bindinput='listenParentsName'/>
+    <text class='fa fa-asterisk fa-icon-1'></text>
+  </view>
+  <view class='inp'>
+    <text class='fa fa-phone fa-icon'></text>
+    <input type="text" placeholder="地址" class="apply-inp" bindinput='listenPhone'/>
+    <text class='fa fa-asterisk fa-icon-1'></text>
+  </view>
+  <!-- <button class='confirm' bindtap='pay'>立即报名</button> -->
+  <button class='confirm' bindtap='pay1'>立即购买</button>
+
+</view>

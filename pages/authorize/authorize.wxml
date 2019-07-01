@@ -1,0 +1,14 @@
+<!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+ <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+<view class='authorize-area'>
+  <image class='authorize-area-img' src="../../image/auth-top-bg.png"></image>
+</view>
+
+<view class='btn-area'>
+  <view class="info-txt">
+    我们需要获得您的授权，以关联您的账号
+  </view>
+  <button class='btn btn1'>拒绝</button>
+  <button class='btn btn2' wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">接受</button>
+  <view wx:else>请升级微信版本</view>
+</view>

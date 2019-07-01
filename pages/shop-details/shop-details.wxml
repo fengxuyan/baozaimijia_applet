@@ -1,0 +1,232 @@
+<view class="main">
+  <view class="shop-details-banner">
+
+    <view class="page-section page-section-spacing slide">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key>
+          <swiper-item>
+            <image src="{{item.src}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+
+    <view class="user-number">
+      <view class='user-number-area'>
+        <view style="font-size: 20px;color: #303030;font-weight: 600;">
+          宝在米家南京禄口中心
+        </view>
+
+        <view class='content-info' style='font-size: 14px;color: #666;margin: 15px 0;'>
+          <view class='{{info}}'>
+            宝在米家是与拥有30年教育运营经验的国内知名早教品牌，携手国际儿童教育协会联合发布的针对0-6岁的宝宝的早期教育项目。是一种新型的早教，以家庭教育为主，机构教育为辅，结合互联网三位一体的早期教育。
+          </view>
+
+          <view wx:if="{{show}}" bindtap="clickDown" style='color: #999;font-size: 12px;margin-top: 7px;'>
+            查看更多
+            <text class='fa fa-angle-down'></text>
+          </view>
+          <view wx:else bindtap="clickUp" style='color: #999;font-size: 12px;margin-top: 7px;'>
+            收起
+            <text class='fa fa-angle-up'></text>
+          </view>
+        </view>
+        <view class="number">
+          365人浏览过
+        </view>
+
+        <view class="user">
+          <image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3019864214,830721017&fm=27&gp=0.jpg" class="head-image" />
+          <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4064600328,406175079&fm=27&gp=0.jpg" class="head-image" />
+          <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532420946&di=af8d98bdd4b0530d56addcd177e0dbf8&imgtype=jpg&er=1&src=http%3A%2F%2Ffile.mumayi.com%2Fforum%2F201505%2F25%2F132333v5wjwwmcfmle57mf.jpg" class="head-image" />
+          <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532420926&di=7d0da00be91e957fbc78c3a4b2a4ba20&imgtype=jpg&er=1&src=http%3A%2F%2Fimage.9game.cn%2F2017%2F3%2F4%2F16158693.jpg" class="head-image" />
+          <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1532420911&di=377d01f8f08d3b96088b8e46d1d2fc61&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.ivsky.com%2Fimg%2Fbizhi%2Fpre%2F201711%2F14%2Fhamicat-008.jpg" class="head-image" />
+        </view>
+        <view class="shop-info clearfloat">
+          <view class='left aui-ellipsis-1' bindtap="getPos" data-lng="{{shop.lng}}" data-lat="{{shop.lat}}">
+            <view class='v1'>
+              <text class="fa fa-map-marker"></text> 宝在米家南京禄口中心
+            </view>
+            <view class='v2'>
+              南京市江宁区禄口街道信陵路..
+            </view>
+          </view>
+
+          <view class='right' bindtap='calling' data-tel="{{shop.shop_tel}}">
+            <text class="fa fa-phone"></text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class='shop-area-sec'>
+    <view class='activity-notes-title'>
+      <view class="title">门店展示</view>
+      <view class="t-info">SHOW</view>
+    </view>
+
+    <view class="content">
+      <view>
+         <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542277517837&di=d59e8e9855be73dc2409f7aab748d24e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fd058ccbf6c81800a369fcd34ba3533fa828b4795.jpg"></image>
+      </view>
+       <view>
+         <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542277540707&di=35d2d90bb4fcea86218309b7c8eb50ae&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8601a18b87d6277f1b70810223381f30e924fcae.jpg"></image>
+      </view>
+       <view>
+         <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542277571618&di=e2355bf36b1301721d0a56304d44f5bd&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F80cb39dbb6fd5266751f252ea018972bd40736d7.jpg"></image>
+      </view>
+        <view>
+         <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542277601966&di=01ed77407c7c9058061d35ebe33b8bc4&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fe850352ac65c1038c86240fbb9119313b07e89ef.jpg"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='shop-area-sec'>
+    <view class='activity-notes-title'>
+      <view class="title">师资力量</view>
+      <view class="t-info">TEACHER</view>
+    </view>
+
+    <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex;margin-top: 5px;">
+      <view class="brand-col-sec" wx:for="{{teacher}}" wx:key>
+        <view class='t-img'>
+          <image src="{{item.cover_url}}"></image>
+        </view>
+        <view class='title'>
+          {{item.name}}
+        </view>
+        <view class='skill aui-ellipsis-1'>
+          {{item.skill}}
+        </view>
+        <!-- <view class='info'>
+          {{item.info}}
+        </view> -->
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class='shop-area-sec'>
+    <view class='activity-notes-title'>
+      <view class="title">学员风采</view>
+      <view class="t-info">STUDENT</view>
+    </view>
+
+    <view class='student clearfloat'>
+      <view class='s-list'>
+        <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1507215608,4260887401&fm=26&gp=0.jpg"></image>
+      </view>
+      <view class='s-list'>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542190059211&di=247b9dd98dde83b303c00521794cf66e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F024f78f0f736afc3de044d90b919ebc4b745123e.jpg"></image>
+      </view>
+      <view class='s-list'>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542190076623&di=33ea68974483689d6191fdbc02fe27c0&imgtype=0&src=http%3A%2F%2Fwww.qingdaonews.com%2Fimages%2Fattachement%2Fjpg%2Fsite1%2F20170303%2F00e04c497dc81a231a3c2d.jpg"></image>
+      </view>
+      <view class='s-list'>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542190091302&di=19ae0901e31ffb2182876af29f94a1a4&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180921%2F4b295e18b2bd45729ff939bbb245522e.jpeg"></image>
+      </view>
+      <view class='s-list'>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542784831&di=62787cb6bcc95376e3a25badadd61405&imgtype=jpg&er=1&src=http%3A%2F%2Fdingyue.nosdn.127.net%2F1TIdNx0LkYNu3boAMW5c%3DAMLwikb9Dgln88nH8pbLKaoJ1542079473986compressflag.jpg"></image>
+      </view>
+      <view class='s-list'>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542190150861&di=81882cf7b6c66335d8ea1a54bb7627ac&imgtype=0&src=http%3A%2F%2Fphotocdn.sohu.com%2F20150831%2Fmp30040490_1441008336766_4.jpeg"></image>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='shop-area-sec' style='padding-bottom: 90px;'>
+    <view class='activity-notes-title' style="text-align: center;">
+      <view class="title title-info">Agency Activity</view>
+      <view class="t-info" style='color: #333;'>门店活动</view>
+    </view>
+
+    <view class='m-activity clearfloat'>
+      <view class='m-activity-img'>
+          <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542278986175&di=7f70153895c8b83b5ff1ad294864caf6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3D29bdf0b94c2309f7f362a5511a676686%2F91529822720e0cf3b13dabd60046f21fbf09aad1.jpg'></image>
+      </view>
+      <view class="box-list-item" bindtap="linkActivity">
+        <view class="list-item-img">
+          <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542280900606&di=bc2c5de81caf160bc32e10a02d70add2&imgtype=0&src=http%3A%2F%2Fwww.hebsport.gov.cn%2Fuploads%2Fallimg%2F161214%2F1-161214104435137.jpg"></image>
+        </view>
+       <view class="list-item-txt">
+          <view class="aui-ellipsis-2 view">
+            南京六合中心冬季滑雪活动
+          </view>
+          <view class="sales clearfloat">
+            <view class="sales-1">
+              <span class="spp-1">浏览：</span>
+              <span class="spp-2"> 2340</span>
+            </view>
+            <view class="p">
+            ¥2099.00
+
+             <span class='o-price'>
+            <text class='fa fa-jpy'></text>3080
+          </span> 
+            </view>
+          </view>
+          <view class='info-a aui-ellipsis-2'>
+          宝在米家南京六合中心秋季拼团活动,拼团成功即可享受八折优惠
+          </view>
+
+          <view class='btn-a'>
+             <button>去拼团</button>
+          </view>
+         
+        </view>
+      </view>
+
+      <view class="box-list-item" bindtap="activityDetails">
+        <view class="list-item-img">
+          <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542280806283&di=af153f47dd81f4b56069a117999f73d0&imgtype=0&src=http%3A%2F%2Fbpic.ooopic.com%2F15%2F98%2F18%2F15981839-c4ff26812e74c4f4b4850ebe1fa8f3bc-2.jpg"></image>
+        </view>
+       <view class="list-item-txt">
+          <view class="aui-ellipsis-2 view">
+            宝在米家冰雪世界观光活动
+          </view>
+          <view class="sales clearfloat">
+            <view class="sales-1">
+              <span class="spp-1">浏览：</span>
+              <span class="spp-2"> 2340</span>
+            </view>
+            <view class="p">
+            ¥2099.00
+
+             <span class='o-price'>
+            <text class='fa fa-jpy'></text>3080
+          </span> 
+            </view>
+          </view>
+          <view class='info-a aui-ellipsis-2'>
+          宝在米家南京六合中心秋季拼团活动,拼团成功即可享受八折优惠
+          </view>
+
+          <view class='btn-a'>
+             <button>去拼团</button>
+          </view>
+         
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+
+  <view class='bottom-btn' data-shopn="{{shop.shop_name}}" bindtap='linkAudition'>
+    <button>快速报名</button>
+  </view>
+
+
+  <view class='order-tips' animation="{{animationData}}">
+    <image class='user-img' src="{{orderTips.src}}"></image>
+    <span class='user-name'>{{orderTips.name}}</span>
+
+    <span class='user-time'>{{orderTips.time}}</span>
+  </view>
+
+</view>

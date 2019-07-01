@@ -1,0 +1,68 @@
+<view class='amount-record'>
+
+
+  <view class='group-info'>
+    <view class='g-info clearfloat'>
+      <text class="fa fa-users"></text> 还差一人，剩余时间 23:26:20
+
+      <view class="see">
+        去分享
+      </view>
+    </view>
+    <view class='g-users'>
+
+      <view class='g-users-b'>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530620804454&di=2f8a899dd93dbee211406b073901c32f&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fc%2F57f9aee102abb.jpg" class='g-users-img'></image>
+        <view class='m-user'>
+          拼主
+        </view>
+
+      </view>
+
+      <view class='g-users-b'>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530620866308&di=4f18b93a0a0e5c36f340a27070159847&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fc%2F5744200be7026.jpg" class='g-users-img'></image>
+      </view>
+
+    </view>
+  </view>
+
+  <view class='group-orders'>
+
+    <view class="box-list-item">
+      <view class='list-item-img'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530620737629&di=2728d37857762ceb8b103c02b9542604&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201408%2F05%2F094437hnnxwqroq2on2oof.jpg'></image>
+      </view>
+      <view class='list-item-txt'>
+        <view class="user-name clearfloat">
+          <view class='name aui-ellipsis-2'>活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称</view>
+        </view>
+
+        <view class="price">
+          <span class="price-1">¥</span>
+          <span class="price-2">10</span>
+
+          <span class='o-price'>
+            <text class='fa fa-jpy'></text>19.8
+          </span>
+        </view>
+      </view>
+    </view>
+
+    <view class='r-price'>
+      实付款：
+      <span>¥10</span>
+    </view>
+
+    <view class='s-contact'>
+      <button class='btn'>联系客服</button>
+      <button class='btn'>联系商家</button>
+    </view>
+  </view>
+
+  <view class='order-info'>
+    <view>订单编号：1020202022202020</view>
+    <view>下单时间：2018-11-20 12:20:20</view>
+  </view>
+
+
+</view>

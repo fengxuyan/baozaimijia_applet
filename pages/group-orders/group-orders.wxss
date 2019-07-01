@@ -1,0 +1,196 @@
+page {
+  background-color: #f5f5f5;
+}
+.amount-record{
+  padding: 10px 0;
+}
+.group-orders{
+  background-color: white;
+}
+.group-info{
+  padding: 10px 10px 0;
+  box-sizing: border-box;
+}
+.box-list-item {
+    display: -webkit-box;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+.box-list-item .list-item-img {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    width: 120px;
+    height: 90px;
+    margin-left: 10px;
+}
+.box-list-item  .list-item-img image {
+    width: 100%;
+    height: 100%;
+}
+.box-list-item .list-item-txt {
+    height: 40px;
+    -webkit-box-flex: 1;
+    position: relative;
+    margin-left: 15px;
+    padding-right: 15px;
+
+    text-align: left;
+}
+.user-name{
+  font-size: 16px;
+  color: #303030;
+  line-height: 1.6;
+}
+.name{
+  float: left
+}
+.time{
+  font-size: 12px;
+  color: #9b9b9b;
+  margin-top: 5px;
+}
+
+.user-amount{
+   font-size: 14px;
+    color: #9b9b9b;
+    margin-top: 15px;
+}
+.amount{
+  color: #ed6b69;
+  font-weight: 600;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+
+.activity-notes-title{
+  text-align: center;
+}
+.activity-notes-title .title{
+  font-size: 16px;
+  color: #303030;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+.activity-notes-title .title::before{
+  display: block;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #303030;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+}
+.activity-notes-title .title::after{
+  display: block;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #303030;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+}
+.t-info{
+  font-size: 12px;
+  color: #9b9b9b;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.group-info{
+  background-color: white;
+  margin-bottom: 10px;
+}
+.g-info{
+  font-size: 14px;
+  color: #666;
+}
+.g-users{
+  padding: 10px 0 10px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.g-users-b{
+    width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+}
+.g-users-img{
+   width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #f5f5f5;
+}
+.see {
+  font-size: 14px;
+  float: right;
+   background-color: #fae34c;
+  color: #333;
+  padding: 5px 25px;
+  border-radius: 4px;
+}
+.m-user{
+  border: 1px solid red;
+  padding: 0px 4px;
+  font-size: 10px;
+  color: red;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  border-radius: 2px;
+  background: white;
+}
+.price {
+
+  background-color: white;
+  text-align: left;
+  color: #f75c5a;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.o-price {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: #999;
+  margin-left: 10px;
+  font-weight: 500;
+}
+.r-price{
+  padding: 10px 10px;
+  text-align: right;
+  font-size: 16px;
+  color: #303030;
+}
+.r-price span{
+    color: #f75c5a;
+}
+.s-contact{
+   padding: 10px 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #303030;
+  border-top: 1px solid #f5f5f5;
+}
+
+.btn{
+  width: 140px;
+  display: inline-block;
+  margin-right: 15px;
+  background-color: white;
+  font-size: 16px;
+  color: #666;
+}
+.order-info{
+  padding: 10px;
+  background: white;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #999;
+}
+

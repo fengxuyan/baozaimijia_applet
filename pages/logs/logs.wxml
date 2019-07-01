@@ -1,0 +1,20 @@
+<view class="audio">
+  <image class="bg" src="{{poster}}"></image>
+  <image mode="aspectFill" class="poster" src="{{poster}}"></image>
+  <view class="bg-gray">
+  </view>
+  <view class="bottom-box">
+
+    <view class="control-process">
+      <text class="current-process">{{currentPosition === 0 ? '0' : currentPosition}}</text>
+      <slider class="slider" bindchange="bindSliderchange" block-size="16" activeColor="#fff" backgroundColor="rgba(255,255,255,.3)" value="{{sliderValue}}" />
+      <text class="total-process">{{duration === 0 ? '0' : duration}}</text>
+    </view>
+    <view class="icon-list ">
+      <image bindtap="prev" mode="widthFix" src="{{is_first_page?'/image/audio_prev_no.png':'/image/audio_prev_no.png'}}" class="audio-icon"></image>
+      <image mode="widthFix" src="{{is_play? '/image/audio_play.png': '/image/audio_paused.png'}}" class="audio-icon audio-play" bindtap="audio_play"></image>
+      <image bindtap="next" mode="widthFix" src="{{is_last_page?'/image/audio_next_no.png':'/image/audio_next_no.png'}}" class="audio-icon"></image>
+      <!-- <image hidden mode="widthFix" class="pattern" src="{{is_loop ? '/image/audio_loop.png': '/image/audio_un_loop.png'}}" bindtap="play_loop"></image> -->
+    </view>
+  </view>
+</view>

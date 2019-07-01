@@ -1,0 +1,228 @@
+.main{
+  padding: 0 20px;
+}
+.main-top{
+  margin-bottom: 15px;
+}
+swiper{
+  width: 100%;
+  height: 290px; 
+}
+.slide-image{
+  width: 100%;
+  height: 220px;
+}
+.title{
+  float: left;
+}
+.t1{
+  font-size: 22px;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.t2{
+  color: #9b9b9b;
+  font-size: 14px;
+}
+.count{
+  float: right;
+}
+.more{
+  float: right;
+  font-size: 14px;
+  color: #f75c5a;
+}
+.sp1{
+  font-size: 26px;
+  color: #303030;
+  font-style: italic;
+}
+.line{
+  padding: 0 4px;
+    color: #9b9b9b;
+    font-size: 12px;
+}
+.sp2{
+  font-size: 16px;
+  color: #9b9b9b;
+}
+.name{
+  font-size: 16px;
+  color: #303030;
+  margin-top: 15px;
+  height: 50px;
+  font-weight: 600;
+  line-height: 1.6;
+  overflow: hidden;
+  /* letter-spacing: 1px; */
+
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.a-type{
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+  border-top: 1px solid #f5f5f5; 
+  border-bottom: 1px solid #f5f5f5; 
+  margin: 0 0 20px;
+  box-sizing: border-box;
+}
+ .a-type-col{
+  flex: 1;
+
+  font-size: 14px;
+  color: #303030;
+} 
+ .a-type-col:nth-child(1){
+    text-align: left;
+ }
+  .a-type-col:nth-child(1) .type-img{
+   width: 33px;
+   height: 38px;
+   margin: 0 auto
+}
+ .a-type-col:nth-child(2){
+    text-align: center;
+ }
+  .a-type-col:nth-child(2) .type-img{
+   width: 33px;
+   height: 38px;
+   margin: 0 auto
+}
+
+ .a-type-col:nth-child(3){
+    text-align: right;
+ }
+  .a-type-col:nth-child(3) .type-img{
+   width: 33px;
+   height: 38px;
+   margin: 0 auto
+}
+
+
+.box-list-item {
+  display: -webkit-box;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+ .box-list-item .list-item-img {
+  display: inline-block;
+  text-align: center;
+  width: 96px;
+  height: auto;
+  margin-right: 15px;
+}
+.box-list-item  .list-item-img image {
+  width: 96px;
+  height: 128px;
+  box-shadow: 0 10px 15px rgba(201, 203, 216, 0.7);
+}
+.box-list-item .list-item-txt {
+  height: auto;
+  -webkit-box-flex: 1;
+  position: relative;
+  text-align: left;
+}
+ .box-list-item .list-item-txt view.view {
+  font-size: 14px;
+   color: #303030;
+   font-weight: 500;
+   line-height: 1.6;
+}
+.sales-1{
+  float: left;
+}
+.box-list-item .list-item-txt .p {
+  float: right;
+  vertical-align: middle;
+  font-size: 18px;
+   color: #f75c5a;
+   font-weight: 600;
+   font-style: italic;
+   padding-top: 0px;
+}
+.box-list-item .list-item-txt .p .star{
+  margin-right: 4px;
+  color: #f75c5a;
+  font-size: 10px;
+  vertical-align: middle;
+}
+.box-list-item .list-item-txt view span {
+  font-size: 12px;
+  color: #303030;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+.aui-ellipsis-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.sales{
+  margin: 5px 0 15px;
+}
+.spp-1{
+  color: #666!important;
+  margin-right: 5px;
+}
+.spp-2{
+    color: #303030!important;
+  
+}
+.addr {
+   margin-top: 5px; 
+  letter-spacing: 1px;
+  line-height: 1.4;
+  font-size: 14px;
+  color: #303030;
+}
+.addr .fa{
+  font-size: 13px;
+  color: #666!important;
+}
+
+.pub-a{
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  -moz-box-shadow: 2px 2px 9px #999;
+  -webkit-box-shadow: 2px 2px 9px #999;
+  box-shadow: 2px 2px 9px #999;
+  z-index: 1;
+
+  background: -webkit-linear-gradient(to bottom, #f7be53, #fbd840);
+  background: -o-linear-gradient(to bottom, #f7be53, #fbd840);
+  background: -moz-linear-gradient(to bottom, #f7be53, #fbd840);
+  background: linear-gradient(to bottom, #f7be53, #fbd840);
+
+   -webkit-animation:swinging 2s ease-in-out 0s infinite;
+   -moz-animation:swinging 2s ease-in-out 0s infinite;
+   animation:swinging 2s ease-in-out 0s infinite;
+   -webkit-transform-origin: 50% 100%;
+   -moz-transform-origin: 50% 100%;
+   transform-origin: 50% 100%;
+}
+@-webkit-keyframes swinging{
+   0% { -webkit-transform: rotate(10deg); }
+   50% { -webkit-transform: rotate(-10deg); }
+   100% { -webkit-transform: rotate(10deg); }
+}
+.pub-a image{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}

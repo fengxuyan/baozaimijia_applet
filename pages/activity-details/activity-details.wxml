@@ -1,0 +1,156 @@
+<view class="main">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="">
+      <swiper-item>
+        <image src="{{item.src}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="activity-title">
+    南京六合中心冬季滑雪活动
+  </view>
+  <view class="price">
+    <span class="price-1">¥</span>
+    <span class="price-2">19.8</span>
+
+     <span class='o-price'>
+      <text class='fa fa-jpy'></text>200
+    </span>
+  </view>
+  <view class="sales clearfloat">
+    <view class="sell">
+      <span class="spp-1">已售</span>
+      <span class="spp-2">1200</span>
+    </view>
+    <view class="tags">
+      <span class="spp-1">浏览</span>
+      <span class="spp-2"> 6589</span>
+    </view>
+  </view>
+  <view class="user clearfloat">
+    <view class='user-left'>
+      <view class="user-img-1" wx:for="{{sales}}" wx:key="">
+        <image src="{{item.avatar_url}}" class="head-image" style='border: 1px solid #eee;' />
+      </view>
+      <image class="head-image" src="../../image/ellipsis.png" style='margin-left: -10px;position: relative;z-index: 1;'></image>
+    </view>
+
+    <view class='user-right' bindtap="listenerButton">
+      分享活动
+    </view>
+  </view>
+
+  <view class="group">
+    <view class='group-title'>
+      有正在拼单的团，可直接参与
+    </view>
+    <view class='group-box'>
+      <view class="box-list-item">
+        <view class="list-item-img">
+
+          <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530620804454&di=2f8a899dd93dbee211406b073901c32f&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fc%2F57f9aee102abb.jpg"></image>
+        </view>
+        <view class="list-item-txt clearfloat" data-id="{{shop.id}}" data-title="{{shop.shop_name}}" bindtap="shopDetails">
+
+          <view class="aui-ellipsis-1 view">
+            张三
+          </view>
+          <view class="group-main-info">
+            <view class="info-num">
+              还差
+              <span>1人</span>拼成
+            </view>
+            <view class="info-time">
+              剩余：23:26:20
+            </view>
+          </view>
+          <view class="see">
+            去参团
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='activity-notes'>
+    <view class='activity-notes-title'>
+      <view class="title">Activity Details</view>
+      <view class="t-info">活动详情</view>
+    </view>
+    <view class='details'>
+      <!-- <web-view src="{{event.content}}" />  -->
+      <!-- <view>
+          <p>{{event.content}}</p>
+       </view> -->
+
+      <import src="../../utils/wxParse/wxParse.wxml" />
+      <view class="wxParse">
+        <template is="wxParse" data="{{wxParseData:detiel.nodes}}" />
+      </view>
+
+      <view style='font-size: 12px;color: #3b3b3b;;text-align: left;line-height:1.8;margin-top: 25px;'>
+        注意：本活动仅限新学员使用,每位学员仅可使用一次，不可叠加使用
+      </view>
+
+    </view>
+  </view>
+
+  <view class='pay-area'>
+    <view class='list' bindtap='my'>
+      <view class='v1'>
+        <text class="fa fa-user"></text>
+      </view>
+      <view class='v2'>我的</view>
+    </view>
+    <view class='list' bindtap='calling'>
+      <view class='v1'>
+        <text class="fa fa-tty"></text>
+      </view>
+      <view class='v2'>客服</view>
+    </view>
+
+    <!-- <view class="income" bindtap='linkIncome'>我的收益</view>
+    <view class="pay" data-id="{{event.id}}" bindtap='linkfillUserInfo'>立即抢购</view> -->
+
+
+    <view class="buy" data-id="{{event.id}}" bindtap='linkfillUserInfo'>
+      <view class="p-num">¥200.00</view>
+      <view class="p-txt">单独购买</view>
+    </view>
+    <view class="group-buy" 
+    bindtap='linkfillUserInfo'>
+      <view class="p-num">¥19.8</view>
+      <view class="p-txt">发起拼团</view>
+    </view>
+
+  </view>
+
+  <view class='order-tips' wx:if="{{vshow}}">
+    <image class='user-img' src="{{sales[vindex].avatar_url}}"></image>
+    <span class='user-name'>{{sales[vindex].nickname}}</span>
+    <span class='user-time'>{{sales[vindex].paid_time}}</span>
+  </view>
+  <action-sheet hidden="{{actionSheetHidden}}" bindchange="listenerActionSheet">
+    <action-sheet-item>
+      <view>
+        <button open-type="share">
+          <image src="../../image/wx-share-01.png" class='share-img'></image>
+          发给好友
+        </button>
+      </view>
+    </action-sheet-item>
+    <action-sheet-item>
+      <view bindtap='share'>
+        <image src="../../image/wx-share-02.png" class='share-img'></image>
+        生成卡片
+      </view>
+    </action-sheet-item>
+  </action-sheet>
+</view>
+
+<canvas canvas-id="shareImg" style="width:545px;height:770px"></canvas>
+<!-- 预览区域  -->
+<view hidden="{{hidden}}" class='preview'>
+  <image src='{{prurl}}' mode='widthFix'></image>
+  <button type='primary' size='mini' bindtap='save'>保存到相册</button>
+</view>

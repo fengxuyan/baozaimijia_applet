@@ -1,0 +1,59 @@
+<view class="sum">
+  <view class='sum-title'>
+    累计分享收益金额
+  </view>
+  <view class='sum-amount'>
+    <text class='fa fa-jpy'></text> {{total_commission}}
+    <i>元</i>
+  </view>
+
+  <view class='my-order' bindtap='myOrder'>
+    <text class="fa fa-bars"></text> 我的订单
+  </view>
+</view>
+<view class="sum-list clearfloat">
+  <view class='list list-br'>
+    <view class='list-title'>
+      今日收益
+    </view>
+    <view class='list-amount'>
+      <text class='fa fa-jpy'></text> {{today_commission}}
+      <i>元</i>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='list-title'>
+      最高收益
+    </view>
+    <view class='list-amount'>
+      <text class='fa fa-jpy'></text> {{max_commission}}
+      <i>元</i>
+    </view>
+  </view>
+</view>
+
+<view class='amount-record'>
+  <view class='activity-notes-title'>
+    <view class="title">收益明细</view>
+    <view class="t-info">分享多多，收益多多</view>
+  </view>
+  <view class="box-list-item" wx:for="{{commissions}}" wx:key="">
+      <view class='list-item-img'>
+        <image src='{{item.avatar_url}}'></image>
+      </view>
+      <view class='list-item-txt'>
+          <view class="user-name clearfloat">
+            <view class='name'>{{item.nickname}}</view>
+            <view class='time'>{{item.created_at}}</view>
+          </view>
+
+          <view class="user-amount">
+              红包返佣
+              <span class="amount">
+                <text class='fa fa-jpy'></text> {{item.price}}
+              </span>
+          </view>
+      </view>
+  </view>
+
+</view>

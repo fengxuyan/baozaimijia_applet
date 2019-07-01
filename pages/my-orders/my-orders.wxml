@@ -1,0 +1,24 @@
+<view class='amount-record'>
+ 
+  <view class="box-list-item"  bindtap='orderDetails'>
+      <view class='list-item-img'>
+        <image src='{{item.avatar_url}}'></image>
+      </view>
+      <view class='list-item-txt'>
+          <view class="user-name clearfloat">
+            <view class='name aui-ellipsis-1'>活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称</view>
+          </view>
+
+          <view class="user-amount">
+            支付金额
+              <span class="amount">
+                <text class='fa fa-jpy'></text> 100
+              </span>
+          </view>
+
+          <view class='time'>2018-08-20 12:20:20</view>
+          
+      </view>
+  </view>
+
+</view>

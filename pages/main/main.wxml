@@ -1,0 +1,149 @@
+<view class="main">
+  <view class='main-top clearfloat'>
+    <view class="title">
+      <view class="t1">宝在米家</view>
+      <view class="t2">家园共育第一品牌</view>
+    </view>
+    <view class="count">
+      <span class="sp1">{{swiperCurrent}}</span>
+      <span class="line">/</span>
+      <span class="sp2">{{swiperTotal}}</span>
+    </view>
+  </view>
+
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+    <block wx:for="{{imgUrls}}" wx:key="">
+      <swiper-item>
+        <image src="{{item.src}}" class="slide-image" />
+        <view class="name">{{item.name}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- <view class="a-type"> -->
+   <!-- <view>现金抵扣卡</view>  
+   <view>100抵扣500</view> -->
+  <!-- </view> -->
+
+  <view class="a-hot-list">
+    <view class='main-top clearfloat'>
+      <view class="title">
+        <view class="t1">直营门店</view>
+        <view class="t2">宝在米家，专业育儿</view>
+      </view>
+    </view>
+
+    <view class='list'>
+      <view class="box-list-item" bindtap="shopDetails">
+        <view class="list-item-img">
+          <image src="../../image/shop01.jpeg"></image>
+        </view>
+        <view class="list-item-txt">
+          <view class="aui-ellipsis-2 view">
+            宝在米家南京高淳中心
+          </view>
+          <view class="sales clearfloat">
+            <view class="sales-1">
+              <span class="spp-1">浏览：</span>
+              <span class="spp-2"> 1230</span>
+            </view>
+            <view class="p">
+            ¥1299.00
+            </view>
+          </view>
+          <view class="aui-ellipsis-2 addr">
+            <text class="fa fa-location-arrow "></text>
+            <span class="spp-1">
+              所在位置
+            </span>
+            <span class="spp-2">南京市高淳县淳溪镇镇兴路..</span>
+          </view>
+          <view class="aui-ellipsis-2 addr">
+            <text class="fa fa-phone"></text>
+            <span class="spp-1">
+              联系电话
+            </span>
+            <span class="spp-2">025-66121899</span>
+          </view>
+          
+        </view>
+      </view>
+
+      <view class="box-list-item" bindtap="activityDetails">
+        <view class="list-item-img">
+          <image src="../../image/shop02.jpg"></image>
+        </view>
+       <view class="list-item-txt">
+          <view class="aui-ellipsis-2 view">
+            宝在米家南京禄口中心
+          </view>
+          <view class="sales clearfloat">
+            <view class="sales-1">
+              <span class="spp-1">浏览：</span>
+              <span class="spp-2"> 1000</span>
+            </view>
+            <view class="p">
+            ¥2099.00
+            </view>
+          </view>
+          <view class="aui-ellipsis-2 addr">
+            <text class="fa fa-location-arrow "></text>
+            <span class="spp-1">
+              所在位置
+            </span>
+            <span class="spp-2">南京市江宁区禄口街道信陵路..</span>
+          </view>
+          <view class="aui-ellipsis-2 addr">
+            <text class="fa fa-phone"></text>
+            <span class="spp-1">
+              联系电话
+            </span>
+            <span class="spp-2">025-52181698</span>
+          </view>
+        </view>
+      </view>
+
+      <view class="box-list-item" bindtap="activityDetails">
+        <view class="list-item-img">
+          <image src="../../image/shop3.jpg"></image>
+        </view>
+       <view class="list-item-txt">
+          <view class="aui-ellipsis-2 view">
+            宝在米家南京六合中心
+          </view>
+          <view class="sales clearfloat">
+            <view class="sales-1">
+              <span class="spp-1">浏览：</span>
+              <span class="spp-2"> 2340</span>
+            </view>
+            <view class="p">
+            ¥2099.00
+            </view>
+          </view>
+          <view class="aui-ellipsis-2 addr">
+            <text class="fa fa-location-arrow "></text>
+            <span class="spp-1">
+              所在位置
+            </span>
+            <span class="spp-2">南京市六合区园林西路..</span>
+          </view>
+          <view class="aui-ellipsis-2 addr">
+            <text class="fa fa-phone"></text>
+            <span class="spp-1">
+              联系电话
+            </span>
+            <span class="spp-2">025-57188977</span>
+          </view>
+          
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+
+  <view class="pub-a" bindtap='contact'>
+    <image src="../../image/light.png"></image>
+  </view>
+
+</view>

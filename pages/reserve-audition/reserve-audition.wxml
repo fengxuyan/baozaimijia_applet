@@ -1,0 +1,42 @@
+<view class="apply-for-area">
+  <view class="apply-for-area-title">宝在米家南京禄口中心</view>
+  <view class="apply-for-area-info">请您选择您要预约的课程，并留下联系方式</view>
+  <view class='inp'>
+    <text class='fa fa-desktop fa-icon'></text>
+
+    <picker bindchange="bindPickerChange" value="{{index}}"  range="{{courses}}" range-key="name">
+      <view class="picker" class="apply-inp" style='line-height: 55px;color: #666;'>
+        {{courses[index].name}}
+      </view>
+    </picker>
+    <text class='fa fa-asterisk fa-icon-1'></text>
+  </view>
+  <view class='inp'>
+    <text class='fa fa-user fa-icon'></text>
+    <input type="text" placeholder="孩子姓名" class="apply-inp" bindinput="listenName"/>
+    <text class='fa fa-asterisk fa-icon-1'></text>
+  </view>
+   <view class='inp'>
+    <text class='fa fa-user fa-icon'></text>
+    <input type="text" placeholder="孩子年龄" class="apply-inp" bindinput="listenName"/>
+    <text class='fa fa-asterisk fa-icon-1'></text>
+  </view>
+  <view class='inp'>
+    <text class='fa fa-user fa-icon'></text>
+    <input type="text" placeholder="您的姓名" class="apply-inp" bindinput="listenName"/>
+    <text class='fa fa-asterisk fa-icon-1'></text>
+  </view>
+  <view class='inp'>
+    <text class='fa fa-phone fa-icon'></text>
+    <input type="text" placeholder="联系方式" class="apply-inp" bindinput="listenPhone"/>
+    <text class='fa fa-asterisk fa-icon-1'></text>
+  </view>
+  <view class='inp'>
+    <text class='fa fa-tag fa-icon'></text>
+    <input type="text" placeholder="备注信息" class="apply-inp" bindinput="listenRemarks"/>
+    <text class='fa fa-asterisk fa-icon-1'></text>
+  </view>
+
+  <button class='confirm' bindtap='reserve'>立即预约</button>
+
+</view>

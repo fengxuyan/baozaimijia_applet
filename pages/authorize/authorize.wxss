@@ -1,0 +1,30 @@
+.authorize-area{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.authorize-area .authorize-area-img{
+  width: 100%;
+  height: 200px;
+}
+.btn-area{
+  padding: 0 15px;
+}
+.btn{
+  width: 48%;
+  height: 45px;
+  float: left;
+  margin-right: 4%;
+  font-size: 16px;
+  line-height: 45px;
+}
+.btn2{
+  margin-right: 0%;
+  background-color: #18ac18;
+  color: white;
+}
+.info-txt{
+  font-size: 13px;
+  color: #9b9b9b;
+  margin-bottom: 10px;
+}

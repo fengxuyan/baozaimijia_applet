@@ -1,0 +1,77 @@
+<view class="main">
+  <view class='main-top clearfloat'>
+    <view class="title">
+      <view class="t1">{{name}}</view>
+      <view class="t2">鲸一网络，营销专家</view>
+    </view>
+  </view>
+
+  <view class="activity-list">
+    <view class='activity-list-row clearfloat'>
+      <view class='activity-list-col' bindtap="activityDetails">
+       <view class='col'>
+          <view class='img'>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530620804454&di=2f8a899dd93dbee211406b073901c32f&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fc%2F57f9aee102abb.jpg"></image>
+          </view>
+          <view class='title-a'>69.9元包含1次儿童360牙齿清洁、1次儿童畸形筛查、338元冰丝养生凉席</view>
+          <view class='salse clearfloat'>
+            <view class='price'>¥99</view>
+              <view class="sales-1">
+              <span class="spp-1">已售</span>
+              <span class="spp-2"> 1000</span>
+            </view>
+          </view>
+       </view>
+      </view>
+      <view class='activity-list-col'>
+        <view class='col'>
+          <view class='img'>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530620866308&di=4f18b93a0a0e5c36f340a27070159847&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fc%2F5744200be7026.jpg"></image>
+          </view>
+          <view class='title-a'>69.9元包含1次儿童360牙齿清洁、1次儿童畸形筛查、338元冰丝养生凉席</view>
+          <view class='salse clearfloat'>
+            <view class='price'>¥99</view>
+              <view class="sales-1">
+              <span class="spp-1">已售</span>
+              <span class="spp-2"> 1000</span>
+            </view>
+          </view>
+       </view>
+      </view>
+
+
+       <view class='activity-list-col'>
+       <view class='col'>
+          <view class='img'>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530681611298&di=a1f281e19d21a0968e788fa9e78807de&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01e349556868540000012716d62085.jpg%401280w_1l_2o_100sh.jpg"></image>
+          </view>
+          <view class='title-a'>69.9元包含1次儿童360牙齿清洁、1次儿童畸形筛查、338元冰丝养生凉席</view>
+          <view class='salse clearfloat'>
+            <view class='price'>¥99</view>
+              <view class="sales-1">
+              <span class="spp-1">已售</span>
+              <span class="spp-2"> 1000</span>
+            </view>
+          </view>
+       </view>
+      </view>
+      <view class='activity-list-col'>
+        <view class='col'>
+          <view class='img'>
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1530620866308&di=4f18b93a0a0e5c36f340a27070159847&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fc%2F5744200be7026.jpg"></image>
+          </view>
+          <view class='title-a'>69.9元包含1次儿童360牙齿清洁、1次儿童畸形筛查、338元冰丝养生凉席</view>
+          <view class='salse clearfloat'>
+            <view class='price'>¥99</view>
+              <view class="sales-1">
+              <span class="spp-1">已售</span>
+              <span class="spp-2"> 1000</span>
+            </view>
+          </view>
+       </view>
+      </view>
+
+    
+    </view>
+  </view>
+</view>

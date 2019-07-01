@@ -1,0 +1,156 @@
+.sum{
+  width: 100%;
+  height: auto;
+  /* background-color: #f58987; */
+  background-color: #ed6b69;
+  text-align: center;
+  padding: 30px 0;
+}
+.sum-title{
+  font-size: 16px;
+  color: rgba(255,255,255,.6);
+  margin-bottom: 10px
+}
+.sum-amount{
+  font-size: 40px;
+  color: rgba(255,255,255,1);
+  font-weight: 600;
+}
+.sum-amount i{
+  font-size: 14px;
+}
+.sum-list{
+   width: 100%;
+  height: auto;
+  background-color: rgba(237,107,105,.9);
+  padding: 5px 0;
+}
+.list{
+  width: 50%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.list-title{
+  font-size: 13px;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 3px;
+}
+.list-br{
+  position: relative;
+  display: inline-block;
+}
+.list-br::after{
+   display: block;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #df6560;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+.list-amount{
+ font-size: 18px;
+ color: rgba(255,255,255,1);
+ font-weight: 800;
+}
+
+.amount-record{
+  padding: 10px 0;
+}
+.box-list-item {
+    display: -webkit-box;
+    padding: 10px 0;
+    border-top: 1px solid #f5f5f5;
+}
+.box-list-item .list-item-img {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+.box-list-item  .list-item-img image {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.box-list-item .list-item-txt {
+    height: 40px;
+    -webkit-box-flex: 1;
+    position: relative;
+    margin-left: 15px;
+
+    text-align: left;
+}
+.user-name{
+  font-size: 14px;
+  color: #303030;
+}
+.name{
+  float: left
+}
+.time{
+  float: right;
+  font-size: 12px;
+  margin-right: 15px;
+  color: #9b9b9b;
+}
+
+.user-amount{
+   font-size: 14px;
+  color: #9b9b9b;
+}
+.amount{
+  color: #ed6b69;
+  font-weight: 600;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.activity-notes-title{
+  text-align: center;
+}
+.activity-notes-title .title{
+  font-size: 16px;
+  color: #303030;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+.activity-notes-title .title::before{
+  display: block;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #303030;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+}
+.activity-notes-title .title::after{
+  display: block;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #303030;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+}
+.t-info{
+  font-size: 12px;
+  color: #9b9b9b;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.my-order{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+  color: white;
+}

@@ -1,0 +1,77 @@
+.apply-for-area {
+  width: 100%;
+  height: auto;
+  padding: 15px 20px;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+.apply-for-area-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #303030;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.apply-for-area-info {
+  font-size: 14px;
+  color: #9b9b9b;
+  margin: 0 0 20px 0;
+}
+
+.apply-inp {
+  width: 100%;
+  height: 55px;
+  border: 1px solid #d5d5d5;
+  font-size: 14px;
+   padding: 0 35px 0 25px; 
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+
+  text-align: right;
+
+   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.confirm{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+    background: -webkit-linear-gradient(to right,#f9926f,#f96b69);
+    background: -o-linear-gradient(to right,#f9926f,#f96b69);
+    background: -moz-linear-gradient(to right,#f9926f,#f96b69);
+    background: linear-gradient(to right,#f9926f,#f96b69); 
+    color: white;
+}
+.inp{
+  width: 100%;
+  height: 57px;
+  position: relative;
+    margin-bottom: 30px;
+}
+.fa-icon{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #d5d5d5;
+  margin-top: -10px;
+  font-size: 20px;
+}
+.fa-icon-1{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -8px;
+  font-size: 10px;
+  color: red;
+}
